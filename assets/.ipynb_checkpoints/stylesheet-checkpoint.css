@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+}
+
+.app-body{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #A0AB96;
+    
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.1fr 0.3fr;
+    grid-template-areas: "div1 div1 dropdown table-div"
+                        "turnover cost-variables mean par"
+                        "bep bip . par";
+    gap: 10px;
+    
+    @include me
+    
+}
+
+img{
+    height: 110px;
+    width:110px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+
+.banner{
+    background-color: #26331B;
+    color: White;
+    padding: 12px;
+    padding-left: 48px;
+    height: 100px;
+    font-family: sans-serif;
+}
+
+
+.par{
+    border-radius: 3px;
+    display:flex;
+    grid-area: par;
+    background-color: #F0F2ED;
+    box-shadow: 1px 1px 1px 1px grey;
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.div1{
+    border-radius: 3px;
+    display:flex;
+    grid-area: div1;
+    background-color: #E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.bip{
+    border-radius: 3px;
+    font-family: sans-serif;
+    grid-area: bip;
+    background-color:#E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;    
+}
+.mean{
+    border-radius: 3px;
+    height: 120px;
+    width : 120px;
+    font-family: sans-serif;
+    grid-area: mean;
+    background-color:#E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;
+    display:inline-block;
+}
+
+.label-mean{
+    width:20%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.lavel-cred{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.result-mean{
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+}
+.crediting-period{
+    font-family: sans-serif;
+    width: 10px;
+}
+
+.years{
+    text-align: center;
+    vertical-align: top;
+}
+
+.Co2{
+    text-align: center;
+    vertical-align: top;
+}
+
+.graph{
+    font-family: sans-serif;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 10px;
+    align-self:center;
+}
+
+
+
+.rc-slider-handle {
+  position: absolute;
+  margin-left: -7px;
+  margin-top: -5px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 2px #3266c1 !important;
+  background-color: #fff;
+}
+
+.slider-toolip{
+    background: red !important;
+}
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #343831 !important;
+}
+
+.rc-slider-dot{
+    display: none;
+}
+
+.turnover{
+    border-radius: 3px;
+    font-family: sans-serif;
+    grid-area: turnover;
+    background-color:#E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.rc-slider-mark-text{
+    color: black;
+    width: 100%;
+}
+.bep{
+    border-radius: 3px;
+    font-family: sans-serif;
+    grid-area: bep;
+    background-color:#E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.cost-variables{
+    font-family: sans-serif;
+    grid-area: cost-variables;
+    background-color:#E7F7DA;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+
+.dropdown{
+    background-color: black;
+    font-family: sans-serif;
+    color: black;
+    grid-area: dropdown;
+    background-color:#A0AB96;
+}
+
+.table{
+    font-family: sans-serif;
+    grid-area: table-div;
+    background-color:#E7F7DA;
+    
+}
+
+
+.Select-control, .Select-multi-value-wrapper, .Select-menu-outer div {
+    background-color: #E7F7DA;
+}
+.Select-control, .Select, .Select-value-label, .Select-clear-zone {
+    color: black;
+}
+.Select-menu-outer {
+    background-color: #E7F7DA;
+    border: 1px solid #43454a !important;
+}
+.Select-menu-outer div:hover {
+    background-color: #E7F7DA, 0.01);
+    cursor: pointer;
+}
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid #43454a;
+    border-radius: 4px;
+    color: #E7F7DA;
+    background-color: #E7F7DA;
+}
+.Select-arrow {
+    border-color: darkgray transparent transparent;
+}
+.Select-arrow-zone:hover > .Select-arrow, .is-open .Select-arrow {
+    border-color: white transparent transparent;
+}
+
+.label-co2, .label-price, .label-ha, .label-implementation-cost, .label-subsequent-man, .label-gap, .label-audit, .label-consulting{
+    padding-left: 5px;
+} 
